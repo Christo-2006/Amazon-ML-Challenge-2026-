@@ -1,0 +1,24 @@
+# Python 3.11.9 (64-bit). Pinned to the exact versions that produced the submission (pip freeze subset).
+# GPU: CUDA 12.4 build of PyTorch, installed before this file (pip install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124);
+# CatBoost base-model training used task_type=GPU. C++17 compiler with OpenMP for the native matcher (g++ 15.2 MinGW-w64 used).
+numpy==2.4.4
+polars==1.40.1
+pandas==3.0.2
+pyarrow==22.0.0
+lightgbm==4.6.0
+catboost==1.2.10
+torch==2.6.0
+transformers==4.57.6
+tokenizers==0.22.2
+safetensors==0.7.0
+sentencepiece==0.2.1
+huggingface_hub==0.36.2
+RapidFuzz==3.14.5
+text-unidecode==1.3
+# generic pair features (src/pipeline/clean/clean_feats.py, class Encoder: pretrained MiniLM token embeddings; stages t5, i4)
+sentence-transformers==3.1.1
+# installed with sentence-transformers (pinned to the versions used)
+scikit-learn==1.8.0
+scipy==1.17.1
+pillow==12.2.0
+tqdm==4.67.3
